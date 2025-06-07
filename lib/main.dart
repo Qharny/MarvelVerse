@@ -1,12 +1,3 @@
-// pubspec.yaml dependencies needed:
-// flutter:
-//   sdk: flutter
-// http: ^1.1.0
-// shared_preferences: ^2.2.2
-// cached_network_image: ^3.3.0
-// flutter_staggered_animations: ^1.1.1
-// carousel_slider: ^4.2.1
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -20,8 +11,10 @@ void main() {
 }
 
 class MarvelVerseApp extends StatefulWidget {
+  const MarvelVerseApp({super.key});
+
   @override
-  _MarvelVerseAppState createState() => _MarvelVerseAppState();
+  State<MarvelVerseApp> createState() => _MarvelVerseAppState();
 }
 
 class _MarvelVerseAppState extends State<MarvelVerseApp> {
