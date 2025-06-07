@@ -3,6 +3,8 @@ import 'screens/home_screen.dart';
 import 'screens/bookmarks_screen.dart';
 import 'screens/search_screen.dart';
 import 'screens/settings_screen.dart';
+import 'screens/splash_screen.dart';
+import 'screens/welcome_screen.dart';
 
 void main() {
   runApp(MarvelVerseApp());
@@ -46,7 +48,12 @@ class _MarvelVerseAppState extends State<MarvelVerseApp> {
           foregroundColor: Colors.white,
         ),
       ),
-      home: MainNavigationScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SplashScreen(),
+        '/welcome': (context) => WelcomeScreen(),
+        '/home': (context) => MainNavigationScreen(),
+      },
     );
   }
 }
